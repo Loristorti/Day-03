@@ -1,0 +1,11 @@
+function getAngryDog(numberOfWoof) {
+    let woofString = ""; 
+    for (let i = 0; i < numberOfWoof; i++) {
+        woofString += "Woof! "; 
+    }
+    return woofString.trim(); 
+}
+
+var result = getAngryDog(5)
+displayResult(result);
+

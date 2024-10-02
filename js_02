@@ -1,0 +1,14 @@
+function findHousing(housingToFind, housingList) {
+console.log("I'm debugging")
+let I = 0
+let Result = null
+while (I < housingList.length) {
+if (housingList[I].toLowerCase() === housingToFind.toLowerCase()) {
+Result = [I, housingList[I]]
+break
+}
+I++
+}
+return Result
+}
+displayResult(findHousing("Igloo", ["Flat", "House", "Hut", "House", "Palace","Igloo"]))
